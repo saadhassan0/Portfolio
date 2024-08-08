@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad's Writing Portfolio</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a2540;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            padding: 50px 0;
+        }
+        .header h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .header h2 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .header .wave {
+            font-size: 1.5em;
+        }
+        .thin-line {
+            border-bottom: 1px solid #c0c0c0;
+            margin: 20px 0;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-top: 50px;
+        }
+        .books {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .book {
+            background-color: #1a2b4c;
+            border-radius: 15px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+        }
+        .book a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .book:hover .hover-text {
+            display: block;
+        }
+        .hover-text {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            color: #ffffff; /* Ensure text remains white */
+        }
+        .book-cover {
+            width: 200px; /* Set width */
+            height: 300px; /* Set height */
+            border-radius: 15px; /* Rounded corners */
+            object-fit: cover; /* Ensure cover fit */
+            margin: 0 auto 10px auto; /* Centering and margin */
+        }
+        .book-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hi, I am Saad <span class="wave">👋</span></h1>
+            <h2>An Author From Texas</h2>
+            <p>I am a high school student who simply loves to write about genres I am passionate about.</p>
+        </div>
+        <div class="thin-line"></div>
+        <div class="content">
+            <h2 class="section-title">My Books</h2>
+            <div class="books">
+                <div class="book">
+                    <a href="A Scientifically Perfect Life.pdf" download>
+                        <img src="A Scientifically Perfect Life Cover.jpeg" class="book-cover" alt="Book Cover 1">
+                        <div class="book-title">A Scientifically Perfect Life</div>
+                        <div class="hover-text">Click to download</div>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="Digital Detox.pdf" download>
+                        <img src="Digital Detox Cover.jpg" class="book-cover" alt="Book Cover 2">
+                        <div class="book-title">Digital Detox</div>
+                        <div class="hover-text">Click to download</div>
+                    </a>
+                </div>
+                <div class="book">
+                    <a href="Night Terrors.pdf" download>
+                        <img src="Night Terrors Cover.jpeg" class="book-cover" alt="Book Cover 3">
+                        <div class="book-title">Night Terrors</div>
+                        <div class="hover-text">Click to download</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
